@@ -243,3 +243,11 @@ html {
     transform: scale(0.9);
   }
 }
+
+@media (max-width: 480px) {
+  #symbology-control label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  #bandeau img { max-width: 70%; }
+}
