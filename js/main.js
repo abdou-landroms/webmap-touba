@@ -248,7 +248,7 @@ map.on("contextmenu", function (e) {
 var printer = L.easyPrint({
   title: "📷 Exporter la carte",
   position: "topleft",
-  // sizeModes: ["Current"],
+  sizeModes: ["Current"],
   // filename: "carte_touba",
   exportOnly: true,
   hidden: true,
