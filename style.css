@@ -209,7 +209,7 @@ html {
   #panneau {
     position: absolute;
     left: 5px;
-    bottom: 35%;
+    bottom: 25%;
     width: 150px;
     height: 50px;
     float: left;
