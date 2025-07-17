@@ -190,7 +190,7 @@ var couches = {
   Lieux: lieux,
   Quartiers: quartiers_touba,
 };
-var controleur = L.control.layers(baseMaps, couches, { collapsed: false });
+var controleur = L.control.layers(baseMaps, couches, { collapsed: true });
 controleur.addTo(map);
 // Vue initiale
 var vueInitiale = {
