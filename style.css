@@ -182,3 +182,64 @@ html {
   vertical-align: middle;
   background-color: rebeccapurple;
 }
+
+
+/* -- Style responsive pour mobile -- */
+@media (max-width: 768px) {
+  /* Conteneur principal */
+  #cadre {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* Bandeau & panneau repositionnés en haut */
+  #bandeau {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 10px;
+  }
+  #bandeau img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  #panneau {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    flex: 0 0 auto;
+  }
+  #symbology-control label,
+  #legende {
+    font-size: 14px;
+  }
+
+  /* Carte prend l’espace restant */
+  #map {
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ajustements des popups */
+  .popup-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  .popup-content {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Icônes légèrement plus petites */
+  .icon-style {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  /* Réduire le bouton reset/téléchargement */
+  .leaflet-bar button,
+  .leaflet-bar .leaflet-control-locate {
+    transform: scale(0.9);
+  }
+}
